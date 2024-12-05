@@ -10,9 +10,30 @@ public class Examen1 {
  
     public static void main(String[] args) {
 
+
     Scanner scanner = new Scanner(System.in);
     	boolean salir = false;
 
+            switch (opcion) {
+                case 1:
+                    concatenarPalabras(scanner);
+                    break;
+                case 2:
+                  System.out.print("Ingrese una frase: ");
+                	String frase = scanner.nextLine();
+                	String[] palabras = frase.trim().split("\\s+");
+                	System.out.println("La frase contiene " + palabras.length + " palabras.");
+                	break;
+
+                case 3:
+                    contarLetra(scanner);
+                    break;
+                case 4:
+                    salir(scanner);
+                    break;
+                default:
+                    System.out.println("Opción no válida. Intente de nuevo.");
+            }
     	while (!salir) {
         	System.out.println("Menú de opciones:");
         	System.out.println("1. Concatenar dos palabras");

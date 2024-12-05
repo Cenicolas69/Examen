@@ -32,8 +32,19 @@ public class Examen1 {
                     contarPalabras(scanner);
                     break;
                 case 3:
-                    contarLetra(scanner);
-                    break;
+System.out.print("Ingrese una frase: ");
+                	String fraseParaContar = scanner.nextLine();
+                	System.out.print("Ingrese la letra a buscar: ");
+                	char letra = scanner.nextLine().charAt(0);
+                	int contador = 0;
+                	for (char c : fraseParaContar.toCharArray()) {
+                    	if (c == letra) {
+                        	contador++;
+                    	}
+                	}
+                	System.out.println("La letra '" + letra + "' aparece " + contador + " veces en la frase.");
+                	break;
+
                 case 4:
                     salir(scanner);
                     break;

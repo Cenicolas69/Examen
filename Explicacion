@@ -1,0 +1,28 @@
+Estructura del código:
+Inicialización y declaración de variables:
+
+Se utiliza un objeto Scanner para leer la entrada del usuario.
+La variable salir controla si el programa debe seguir ejecutándose o terminar.
+Menú y ciclo while:
+
+El programa entra en un bucle while que se repite hasta que el usuario decida salir (salir = true).
+Dentro de este bucle, el programa muestra un menú con 4 opciones y espera que el usuario ingrese una opción.
+Opciones del menú:
+
+Opción 1: Llamar al método concatenarPalabras(scanner) que pide al usuario dos palabras y las concatena.
+Opción 2: Pide una frase, la divide en palabras y muestra cuántas palabras contiene.
+Opción 3: Pide una frase y una letra, luego cuenta cuántas veces aparece esa letra en la frase.
+Opción 4: Pregunta al usuario si está seguro de querer salir. Si responde "s", el programa termina, si responde cualquier otra cosa, regresa al menú.
+Método concatenarPalabras:
+
+Este método pide al usuario ingresar dos palabras y luego las concatena y muestra el resultado.
+Cierre de recursos:
+
+Al final del programa, el objeto Scanner se cierra con scanner.close() para liberar recursos.
+Flujo del programa:
+El programa muestra el menú.
+El usuario elige una opción.
+Dependiendo de la opción, el programa realiza una acción y muestra el resultado.
+Luego vuelve a mostrar el menú hasta que el usuario elige salir (opción 4).
+Resumen:
+El programa es un menú interactivo en el que el usuario puede realizar operaciones con cadenas de texto, como concatenar palabras, contar palabras o letras en una frase. Continúa ejecutándose hasta que el usuario decide salir.
